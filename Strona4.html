@@ -19,6 +19,9 @@
             $("#Dodaj").on("click", function() {
                 DodajParagraf();
             });
+            $('input:text').focus(function() {
+                $(this).val('');
+            });
 
         });
     </script>
