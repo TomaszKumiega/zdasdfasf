@@ -60,21 +60,21 @@ button {
 }
 
 #left-panel {
-    width: 15%;
+    width: 20%;
     height: 100%;
     float: left;
     display: block;
 }
 
 #content {
-    width: 70%;
+    width: 60%;
     height: 100%;
     float: left;
     background-color: #fafafa;
 }
 
 #right-panel {
-    width: 15%;
+    width: 20%;
     height: 100%;
     float: left;
     display: block;
