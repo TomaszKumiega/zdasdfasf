@@ -153,6 +153,10 @@ article {
     display: block;
 }
 
+span {
+    float: left;
+}
+
 .panel {
     display: table-cell;
 }
