@@ -29,6 +29,7 @@ $(document).ready(function() {
         if ($("#answer-button2").is(':checked')) $("#answer-button2").prop("checked", false);
         if ($("#answer-button1").is(':checked')) $("#answer-button1").prop("checked", false);
     })
+
     $("#answer1").on('click', function() {
         if ($("#answer-button2").is(':checked')) $("#answer-button2").prop("checked", false);
         if ($("#answer-button3").is(':checked')) $("#answer-button3").prop("checked", false);
@@ -104,7 +105,7 @@ $(document).ready(function() {
                     answer2 = "Niestety nie... Sprawia mi to dość duże problemy.";
                     answer3 = "Tak, zawsze jestem pewny swoich wyborów, więc nie zastanawiam się długo.";
 
-                    $("#next-question").text('Wynik');
+                    $("#next-question").text('Sprawdź moje odpowiedzi');
 
                     changeQuestion(question, answer1, answer2, answer3);
                 }
