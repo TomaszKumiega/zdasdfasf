@@ -17,18 +17,4 @@ $(document).ready(function() {
     $("#quiz-button").on("click", function() {
         location.replace("quiz-question.html");
     });
-    $("#galeria-button").on("click", function() {
-        location.replace("galeria.html");
-    });
-
-    loadFirstQuestion();
-
-    function loadFirstQuestion() {
-
-        $("#answer3").text('adfgadg');
-        $("#answer1").text('adfgadg');
-        $("#answer2").text('adfgadg');
-
-    }
-
 });
