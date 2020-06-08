@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <script src="jQuery.js"></script>
     <script src="scripts.js"></script>
+    <script src="quiz-result.js"></script>
+    <style>
+        #title {
+            display: block;
+            text-align: center;
+        }
+        
+        #result {
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 
 <body>
@@ -43,7 +55,10 @@
 
 
         <!--Główny panel-->
-        <div id="content"></div>
+        <div id="content">
+            <label id="title">Wynik:</label>
+            <label id="result"></label>
+        </div>
 
         <!--Prawy panel-->
         <div id="right-panel">

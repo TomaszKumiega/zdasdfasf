@@ -1,22 +1,20 @@
 var quiz = {};
-
 $(document).ready(function() {
 
     quiz.questionNumber = 1;
     quiz.answers = [0, 0, 0, 0, 0];
-    quiz.correctAnswers = [0, 0, 0, 0, 0];
+
+    nextQuestion();
 
     $("#next-question").on('click', function() {
+        writeAnswer();
         quiz.questionNumber += 1;
-        saveAnswer();
         nextQuestion();
 
         $("#answer-button1").prop("checked", false);
         $("#answer-button2").prop("checked", false);
         $("#answer-button3").prop("checked", false);
     });
-
-    nextQuestion();
 
     $("#answer-button1").on('click', function() {
         if ($("#answer-button2").is(':checked')) $("#answer-button2").prop("checked", false);
@@ -98,7 +96,9 @@ $(document).ready(function() {
                 break;
             case 6:
                 {
-                    location.replace("quiz.result.html");
+                    saveAnswers();
+                    location.replace("quiz-result.html");
+
                 }
                 break;
         }
@@ -106,15 +106,20 @@ $(document).ready(function() {
 
     function changeQuestion(question, answer1, answer2, answer3) {
         $("#question").text(question);
-        $("#answer3").text(answer1);
-        $("#answer1").text(answer2);
-        $("#answer2").text(answer3);
+        $("#answer3").text(answer3);
+        $("#answer1").text(answer1);
+        $("#answer2").text(answer2);
     }
 
-    function saveAnswer() {
+    function writeAnswer() {
 
         if ($("#answer-button1").is(':checked')) quiz.answers[quiz.questionNumber - 1] = 1;
         if ($("#answer-button2").is(':checked')) quiz.answers[quiz.questionNumber - 1] = 2;
         if ($("#answer-button3").is(':checked')) quiz.answers[quiz.questionNumber - 1] = 3;
+    }
+
+    function saveAnswers() {
+
+        localStorage.setItem("answers", quiz.answers);
     }
 });
