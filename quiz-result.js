@@ -21,14 +21,14 @@ $(document).ready(function() {
 
         if (countA > countB && countA > countC) $("#result").text('Nie jesteś złotokapem. Jesteś zwykłym ekscentrykiem.');
         else if (countB > countA && countB > countC) $("#result").text('Jesteś złotokapem zwyczajnym. Wykazujesz przeciętne reakcje na większość' +
-            'wydarzeń w Twoim życiu. Prawdopodobnie charakteryzujesz się słabą decyzyjnością, dlatego' +
-            'mógłbyś rosnąć wszędzie. Bycie złotokapem zwyczajnym nie jest takie złe. W końcu wszyscy lubią' +
-            'klasyki.');
+            ' wydarzeń w Twoim życiu. Prawdopodobnie charakteryzujesz się słabą decyzyjnością, dlatego' +
+            ' mógłbyś rosnąć wszędzie. Bycie złotokapem zwyczajnym nie jest takie złe. W końcu wszyscy lubią' +
+            ' klasyki.');
         else if (countC > countA && countC > countB) $("#result").text('Jesteś złotokapem alpejskim. Lubisz wyzwania, jesteś stanowczy i pewny siebie.' +
-            'Poradziłbyś sobie jako złotokap rosnący wysoko w górach. Warunkowałyby Ci niebywały rozkwit.' +
-            'Jesteś indywidualnością i wierzysz w siebie oraz swoje możliwości.');
+            ' Poradziłbyś sobie jako złotokap rosnący wysoko w górach. Warunkowałyby Ci niebywały rozkwit.' +
+            ' Jesteś indywidualnością i wierzysz w siebie oraz swoje możliwości.');
         else if (countA == countB || countB == countC || countA == countC) $("#result").text('Jesteś odmianą Waterera, hybrydą' +
-            'dwóch gatunków, bardzo popularną i lubianą przez ludzi. Z takim poparciem większości mógłbyś' +
-            'startować na prezydenta.');
+            ' dwóch gatunków, bardzo popularną i lubianą przez ludzi. Z takim poparciem większości mógłbyś' +
+            ' startować na prezydenta.');
     }
 });
