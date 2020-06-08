@@ -29,6 +29,21 @@ $(document).ready(function() {
         if ($("#answer-button2").is(':checked')) $("#answer-button2").prop("checked", false);
         if ($("#answer-button1").is(':checked')) $("#answer-button1").prop("checked", false);
     })
+    $("#answer1").on('click', function() {
+        if ($("#answer-button2").is(':checked')) $("#answer-button2").prop("checked", false);
+        if ($("#answer-button3").is(':checked')) $("#answer-button3").prop("checked", false);
+        $("#answer-button1").prop("checked", true);
+    });
+    $("#answer2").on('click', function() {
+        if ($("#answer-button1").is(':checked')) $("#answer-button1").prop("checked", false);
+        if ($("#answer-button3").is(':checked')) $("#answer-button3").prop("checked", false);
+        $("#answer-button2").prop("checked", true);
+    });
+    $("#answer3").on('click', function() {
+        if ($("#answer-button2").is(':checked')) $("#answer-button2").prop("checked", false);
+        if ($("#answer-button1").is(':checked')) $("#answer-button1").prop("checked", false);
+        $("#answer-button3").prop("checked", true);
+    });
 
     function nextQuestion() {
 
