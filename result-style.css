@@ -1,4 +1,5 @@
 #title {
+    margin-top: 20px;
     font-size: 30px;
     display: block;
     text-align: center;
@@ -6,6 +7,6 @@
 
 #result {
     font-size: 24px;
-    margin-left: 30px;
-    margin-top: 30px;
+    margin: 30px;
+    float: left;
 }
